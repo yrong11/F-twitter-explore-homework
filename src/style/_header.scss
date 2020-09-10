@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $container-padding-y $container-padding-x;
+
+  nav {
+    ul {
+      display: flex;
+    }
+    .login-btn {
+      @include header-btn(#42a5f5, #00000000);
+    }
+
+    .register-btn {
+      @include header-btn(white, #42a5f5);
+    }
+  }
+}
