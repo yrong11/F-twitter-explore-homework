@@ -1,3 +1,35 @@
 .container {
   flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.form-container {
+  margin: auto;
+  border: 1px solid;
+  text-align: center;
+  padding: $container-padding-x;
+  border-radius: 15px;
+  h2 {
+    color: $white;
+  }
+  .login-btn {
+    @include twitter-btn($primary-color, #00000000);
+  }
+
+  .register-btn {
+    @include twitter-btn($white, $primary-color);
+  }
+
+  .phone-input,
+  .password-input {
+    @extend .form-input;
+  }
+
+  .forget-pwd-tip {
+    text-align: left;
+    a {
+      color: $primary-color;
+    }
+  }
 }

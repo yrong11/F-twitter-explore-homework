@@ -3,10 +3,11 @@
   font-size: $font-size;
 }
 
-@mixin header-btn($color, $bg-color) {
+@mixin twitter-btn($color, $bg-color) {
   padding: $btn-padding-y $btn-padding-x;
   border-radius: 80px;
   color: $color;
+  width: 100%;
   background-color: $bg-color;
   border: #42a5f5 1px solid;
 }

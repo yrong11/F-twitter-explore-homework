@@ -3,17 +3,18 @@
   justify-content: space-between;
   align-items: center;
   padding: $container-padding-y $container-padding-x;
+  border-bottom: 1px solid;
 
   nav {
     ul {
       display: flex;
     }
     .login-btn {
-      @include header-btn(#42a5f5, #00000000);
+      @include twitter-btn($primary-color, #00000000);
     }
 
     .register-btn {
-      @include header-btn(white, #42a5f5);
+      @include twitter-btn($white, $primary-color);
     }
   }
 }
