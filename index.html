@@ -13,14 +13,17 @@
     <nav>
       <ul>
         <li><button class="login-btn">登录</button></li>
+<!--        TODO feedback: button这里飘红线了，缺了>-->
         <li><button class="register-btn">注册</button</li>
       </ul>
     </nav>
   </header>
+  <!--  TODO Feedback: container是一个没有业务逻辑的命名，这里取名叫做'main'就好了-->
   <main class="container">
     <div class="form-container">
       <form class="home-form">
         <h2>查看世界上正在发生的事情</h2>
+        <!--      TODO feedback: 语义化标签使用不正确：placeholder里面的内容应该放入<label>标签-->
         <input class="phone-input" placeholder="电话、邮件地址或用户名"/>
         <input class="password-input" placeholder="密码"/>
         <p class="forget-pwd-tip"><a href="#">忘记密码?</a></p>
